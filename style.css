@@ -68,13 +68,13 @@ input:checked + .slider {
 
 /* Placeholder text color */
 .input input::placeholder {
-    color: gray; /* Neutral gray for light mode */
+    color: white; /* Neutral gray for light mode */
     transition: color 0.3s; /* Smooth transition for theme changes */
 }
 
 /* Dark mode placeholder styling */
 body.dark-mode .input input::placeholder {
-    color: #bbbbbb; /* Light gray for dark mode to maintain readability */
+    color: black; /* Light gray for dark mode to maintain readability */
 }
 
 /* Toggle switch slider button position when checked */
