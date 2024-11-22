@@ -63,20 +63,25 @@ body.dark-mode {
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #007BFF; /* Changed to a slightly darker blue for better contrast */
 }
-    input::placeholder {
-      color: white;
-    }
 
-    @media (prefers-color-scheme: dark) {
-      input::placeholder {
-        color: black;
-      }
-    }
+/* Placeholder text color */
+.input input::placeholder {
+    color: gray; /* Neutral gray for light mode */
+    transition: color 0.3s; /* Smooth transition for theme changes */
+}
 
+/* Dark mode placeholder styling */
+body.dark-mode .input input::placeholder {
+    color: #bbbbbb; /* Light gray for dark mode to maintain readability */
+}
+
+/* Toggle switch slider button position when checked */
 input:checked + .slider:before {
     transform: translateX(25px);
+    background-color: #ffffff; /* Ensure the slider knob remains visible */
+    transition: transform 0.4s ease, background-color 0.3s ease; /* Smooth transitions */
 }
 
 .main {
