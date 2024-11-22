@@ -65,10 +65,15 @@ body.dark-mode {
 input:checked + .slider {
     background-color: #2196f3;
 }
-input::placeholder{
-    color: white;
-    opacity: 1;
-}
+    input::placeholder {
+      color: gray;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      input::placeholder {
+        color: lightgray;
+      }
+    }
 
 input:checked + .slider:before {
     transform: translateX(25px);
@@ -116,10 +121,6 @@ body.dark-mode .main {
 body.dark-mode .input input {
     background-color: white;
     color: black;
-}
-body.dark-mode .input::placeholder{
-    color: white;
-    opacity: 1;
 }
 
 .input button {
