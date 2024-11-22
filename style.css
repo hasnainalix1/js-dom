@@ -117,6 +117,10 @@ body.dark-mode .input input {
     background-color: white;
     color: black;
 }
+body.dark-mode .input input::placeholder{
+    color: white;
+    opacity: 1;
+}
 
 .input button {
     background: blue;
