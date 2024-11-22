@@ -66,12 +66,12 @@ input:checked + .slider {
     background-color: #2196f3;
 }
     input::placeholder {
-      color: gray;
+      color: white;
     }
 
     @media (prefers-color-scheme: dark) {
       input::placeholder {
-        color: lightgray;
+        color: black;
       }
     }
 
