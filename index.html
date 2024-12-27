@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Hasnain Ali</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>Hasnain Ali Todo</title>
 </head>
 <body>
 
@@ -16,17 +18,16 @@
     </div>
 
     <div class="main">
-        <h2>To do List<i id="icon" class="fa-solid fa-calendar-check"></i></h2>
+        <h2>To do List <i id="icon" class="fa-solid fa-calendar-check"></i></h2>
         <div class="input">
-            <input type="text" placeholder="Enter your task" id="input">
+            <input type="text" placeholder="Enter a card" id="input">
             <button onclick="Add()">Add</button>
         </div>
-        <div class="task">
-      </div>
+        <div class="task-cards">
+        </div>
     </div>
-    <script src="./main.js"></script>
-
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
